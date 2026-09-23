@@ -1,0 +1,47 @@
+// Official GitHub Language Colors (curated top languages + fallback)
+export const GITHUB_LANGUAGE_COLORS: Record<string, string> = {
+  JavaScript: "#f1e05a",
+  TypeScript: "#3178c6",
+  Python: "#3572A5",
+  Java: "#b07219",
+  "C++": "#f34b7d",
+  C: "#555555",
+  "C#": "#178600",
+  PHP: "#4F5D95",
+  Ruby: "#701516",
+  Go: "#00ADD8",
+  Rust: "#dea584",
+  Swift: "#F05138",
+  Kotlin: "#A97BFF",
+  Dart: "#00B4AB",
+  HTML: "#e34c26",
+  CSS: "#563d7c",
+  SCSS: "#c6538c",
+  Vue: "#41b883",
+  Svelte: "#ff3e00",
+  Shell: "#89e051",
+  PowerShell: "#012456",
+  Dockerfile: "#384d54",
+  Lua: "#000080",
+  R: "#198CE7",
+  Scala: "#c22d40",
+  Elixir: "#6e4a7e",
+  Clojure: "#db5855",
+  Haskell: "#5e5086",
+  Zig: "#ec915c",
+  Solidity: "#AA6746",
+  Jupyter: "#DA5B0B",
+  "Jupyter Notebook": "#DA5B0B",
+  Makefile: "#427819",
+  Nix: "#7e7eff",
+  Perl: "#0298c3",
+  OCaml: "#ef7a08",
+  Vim: "#199f4b",
+  "Vim Script": "#199f4b",
+  GraphQL: "#e10098",
+};
+
+export function getLanguageColor(language: string | null): string {
+  if (!language) return "#8b949e";
+  return GITHUB_LANGUAGE_COLORS[language] || "#58a6ff";
+}
