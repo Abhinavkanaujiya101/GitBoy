@@ -11,7 +11,6 @@ import {
   Zap,
 } from "lucide-react";
 
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#090d16] text-slate-100 flex flex-col selection:bg-cyan-500/30 selection:text-cyan-200">
