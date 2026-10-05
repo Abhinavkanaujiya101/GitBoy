@@ -15,11 +15,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#090d16] text-slate-100 flex flex-col selection:bg-cyan-500/30 selection:text-cyan-200">
       <Navbar />
-
       <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative overflow-hidden">
         {/* Background ambient gradient spheres */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/10 via-blue-600/10 to-indigo-600/10 rounded-full blur-[120px] pointer-events-none -z-10" />
-
         {/* Hero Section */}
         <div className="w-full max-w-4xl text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
@@ -45,6 +43,7 @@ export default function Home() {
         </div>
 
         {/* Feature Highlights Grid */}
+        
         <div className="w-full max-w-5xl mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="glass-panel p-5 rounded-2xl border border-slate-800/80 hover:border-cyan-500/30 transition-colors">
             <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
